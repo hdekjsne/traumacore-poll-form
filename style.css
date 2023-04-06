@@ -84,6 +84,12 @@ hr {
 label {
   padding: 5px 10px;
 }
+
+textarea {
+  flex-grow: 2;
+  flex-shrink: 2;
+  resize: none;
+}
 /* layout rules */
 .centered-flex {
   display: flex;
@@ -115,6 +121,11 @@ label {
   gap: 20px 50px;
 }
 
+.textarea-flex {
+  display: flex;
+  flex-direction: column;
+}
+
 .position-1 {
   grid-column: 1 / span 2;
   grid-row: 1 / span 1;
@@ -125,6 +136,16 @@ label {
   grid-column: 3 / span 2;
   grid-row: 1 / span 4;
   position: relative;
+}
+
+.position-3 {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 3;
+}
+
+.position-4 {
+  grid-column: 1 / span 3;
+  grid-row: 5 / span 1;
 }
 
 .position-5 {
@@ -181,7 +202,7 @@ button {
 }
 
 .full-border {
-  border: 1px solid var(--purple-dark);
+  border: 3px solid var(--purple-dark);
   border-radius: 20px;
 }
 
@@ -191,9 +212,26 @@ button {
   border-radius: 0 20px 0 0;
 }
 
+.another-one-partial-border {
+  border-right: 3px solid var(--purple-dark);
+  border-bottom: 3px solid var(--purple-dark);
+  border-radius: 0 0 20px 0;
+}
+
+.main p {
+  font-family: Sofia;
+  font-style: italic;
+}
+
 a {
   text-decoration: none;
   color: var(--text-color);
+}
+
+textarea {
+  color: var(--text-color);
+  font-size: 20px;
+  border-radius: 5px;
 }
 /* tech */
 .ex1 {
