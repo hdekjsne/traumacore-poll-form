@@ -52,3 +52,14 @@ const translation = {
   yy: '',
   zz: '',
 };
+
+const twButton = document.querySelector('.tw button');
+
+function goToMain() {
+  const tw = document.querySelector('.tw');
+  const main = document.querySelector('.main');
+  tw.classList.add('hidden');
+  main.classList.remove('hidden');
+}
+
+twButton.addEventListener('click', goToMain);

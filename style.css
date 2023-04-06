@@ -98,7 +98,7 @@ textarea {
   align-items: center;
 }
 
-.tw > div {
+.tw > div:first-child {
   display: grid;
   grid-template-columns: 10% 90%;
   grid-template-rows: 1fr;
@@ -193,6 +193,7 @@ button {
   border-radius: 10px;
   background-color: var(--purple-dark);
   color: var(--back-color-light);
+  cursor: pointer;
 }
 
 .partial-border {
