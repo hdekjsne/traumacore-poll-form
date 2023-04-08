@@ -19,6 +19,24 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: Zen;
+  src: url('assets/Zen_Maru_Gothic/ZenMaruGothic-Light.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Zen;
+  src: url('assets/Zen_Maru_Gothic/ZenMaruGothic-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Zen;
+  src: url('assets/Zen_Maru_Gothic/ZenMaruGothic-Bold.ttf');
+  font-weight: 700;
+}
+
 :root {
   --back-color-light: #F1E8F0;
   --back-color-dark: #B2ADB1;
@@ -60,6 +78,10 @@ button {
   width: 900px;
   height: 100vh;
   box-sizing: border-box;
+}
+
+.position-2 p {
+  margin-bottom: 0;
 }
 
 .position-3 {
@@ -192,16 +214,15 @@ body {
     var(--back-color-light) 0 70%,
     var(--back-color-dark) 100% 110%
   );
-  font-family: Sofia;
-  font-weight: 400;
-  font-style: normal;
+  font-family: Zen;
+  font-weight: 300;
   color: var(--text-color);
   font-size: 20px;
 }
 
 button {
-  font-family: Sofia;
-  font-style: normal;
+  font-family: Zen;
+  font-weight: 500;
   font-size: 20px;
   color: var(--text-color);
   border: none;
@@ -235,13 +256,7 @@ button {
 }
 
 .main p {
-  font-family: Sofia;
-  font-style: italic;
-}
-
-a {
-  text-decoration: none;
-  color: var(--text-color);
+  font-size: 18px;
 }
 
 .position-1 p {
@@ -251,19 +266,24 @@ a {
   text-align: left;
 }
 
+label {
+  font-weight: 500;
+}
+
 label::before {
   content: '';
   display: inline-block;
   width: 20px;
   height: 20px;
   vertical-align: middle;
-  border: 1px solid var(--border-color);
+  border: 3px solid var(--border-color);
+  border-radius: 50%;
 }
 
 textarea {
   font-size: 20px;
-  font-family: Sofia;
-  font-weight: 400;
+  font-family: Zen;
+  font-weight: 500;
   font-style: normal;
   border-radius: 10px;
   resize: none;
