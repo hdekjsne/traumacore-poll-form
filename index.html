@@ -24,22 +24,52 @@
     </section>
     <!-- common questions -->
     <section class="position-2 scroll another-partial-border">
-      <div class="width100ps height100ps padding-horizontal-10">
-        <p>Ваш возраст:</p>
+      <div class="width100ps">
+        <p>Выберите Вашу возрастную группу:</p>
         <div class="checkbox-container">
-          <input type="radio" name="age" id="age1" class="hidden hidden-checkbox"><label for="age1">18-24</label>
-          <input type="radio" name="age" id="age2" class="hidden hidden-checkbox"><label for="age2">25-34</label>
-          <input type="radio" name="age" id="age3" class="hidden hidden-checkbox"><label for="age3">35-44</label>
-          <input type="radio" name="age" id="age4" class="hidden hidden-checkbox"><label for="age4">45+</label>
+          <input type="radio" name="age" id="age1" class="hidden" value="18-24"><label for="age1"> 18 - 24</label>
+          <input type="radio" name="age" id="age2" class="hidden" value="25-34"><label for="age2"> 25 - 34</label>
+          <input type="radio" name="age" id="age3" class="hidden" value="35-44"><label for="age3"> 35 - 44</label>
+          <input type="radio" name="age" id="age4" class="hidden" value="45+"><label for="age4"> 45+</label>
+        </div>
+      </div>
+      <div class="width100ps">
+        <p>Слышали ли Вы о термине "traumacore" до начала прохождения этого опроса?</p>
+        <div class="checkbox-container">
+          <input type="radio" name="ifKnow" id="ifKnow1" class="hidden" value="3"><label for="ifKnow1"> Да, я активно слежу за появлением нового контента и являюсь частью сообщества.</label>
+          <input type="radio" name="ifKnow" id="ifKnow2" class="hidden" value="2"><label for="ifKnow2"> Слышал и знаю, но не интересуюсь.</label>
+          <input type="radio" name="ifKnow" id="ifKnow3" class="hidden" value="1"><label for="ifKnow3"> Слышал, но не углублялся в тему.</label>
+          <input type="radio" name="ifKnow" id="ifKnow4" class="hidden" value="0"><label for="ifKnow4"> Ничего не знаю об этом.</label>
         </div>
       </div>
       <hr>
-      <div class="width100ps height100ps padding-horizontal-10">
-        <p>Слышали ли Вы о термине "traumacore" до начала прохождения этого опроса?</p>
+      <div class="width100ps">
+        <p>Можете ли Вы сформулировать общую тему представленных изображений?</p>
+        <textarea name="topic" cols="30" rows="5"></textarea>
+      </div>
+      <div class="width100ps">
+        <p>Какие образы помогли понять тему изображений?</p>
+        <textarea name="images" cols="30" rows="5"></textarea>
+      </div>
+      <hr>
+      <div class="width100ps">
+        <p>Опишите общее впечатление.</p>
+        <textarea name="impressio" cols="30" rows="5"></textarea>
+      </div>
+      <div class="width100ps">
+        <p>Если отбросить контекст изображений, можете ли Вы сказать, что визуально они Вам нравятся?</p>
         <div class="checkbox-container">
-          <input type="radio" name="ifKnow" id="ifKnow1" class="hidden hidden-checkbox"><label for="ifKnow1">Да</label>
-          <input type="radio" name="ifKnow" id="ifKnow2" class="hidden hidden-checkbox"><label for="ifKnow2">Нет</label>
+          <input type="radio" name="ifLikeWithoutContext" id="ifLikeWithoutContext1" class="hidden" value="1"><label for="ifLikeWithoutContext1"> Да</label>
+          <input type="radio" name="ifLikeWithoutContext" id="ifLikeWithoutContext2" class="hidden" value="0"><label for="ifLikeWithoutContext2"> Нет</label>
         </div>
+      </div>
+      <div class="width100ps">
+        <p>Что привлекает Вас в данных изображениях или вызывает симпатию?</p>
+        <textarea name="whatLike" cols="30" rows="5"></textarea>
+      </div>
+      <div class="width100ps">
+        <p>Что отталкивает?</p>
+        <textarea name="whatDislike" cols="30" rows="5"></textarea>
       </div>
     </section>
     <!-- gallery -->
