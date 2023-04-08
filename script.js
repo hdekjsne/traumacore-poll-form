@@ -63,27 +63,4 @@ function goToMain() {
   main.classList.remove('hidden');
 }
 
-function showPicture() {
-  const view = document.querySelector('.view-pic');
-  const img = document.querySelector('.view-img');
-  const p = document.querySelector('.view-p');
-  const link = this.querySelector('img').src;
-  const id = this.id;
-  img.src = link;
-  p.textContent = translation[id];
-  view.classList.remove('hidden');
-}
-
-function hidePicture() {
-  this.classList.add('hidden');
-}
-
-function setListenerToA() {
-  document.getElementsByClassName('img-a').each(function() {
-    this.addEventListener('click', showPicture);
-  });
-}
-
 twButton.addEventListener('click', goToMain);
-setListenerToA();
-picViewer.addEventListener('click', hidePicture);
