@@ -54,13 +54,33 @@ const translation = {
 };
 
 const twButton = document.querySelector('.tw button');
-const picViewer = document.querySelector('.view-pic');
+const main = document.querySelector('.main');
+const shadow = document.querySelector('.shadow');
+const viewer = document.querySelector('.viewer');
+const closeIcon = document.querySelector('.close-icon');
 
 function goToMain() {
   const tw = document.querySelector('.tw');
-  const main = document.querySelector('.main');
   tw.classList.add('hidden');
   main.classList.remove('hidden');
 }
 
+function showViewer(e) {
+  const target = e.target;
+  const id = target.id;
+  const textBox = document.querySelector('.text');
+  textBox.textContent = translation[id];
+  shadow.classList.remove('hidden');
+  viewer.classList.remove('hidden');
+  console.log(translation[id]);
+  console.log(target);
+}
+
+function hideViewer() {
+  shadow.classList.add('hidden');
+  viewer.classList.add('hidden');
+}
+
 twButton.addEventListener('click', goToMain);
+main.addEventListener('click', showViewer);
+closeIcon.addEventListener('click', hideViewer);

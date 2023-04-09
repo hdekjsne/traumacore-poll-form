@@ -1,25 +1,4 @@
 @font-face {
-  font-family: Sofia;
-  src: url('assets/Sofia_Sans/SofiaSans-VariableFont_wght.ttf');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Sofia;
-  src: url('assets/Sofia_Sans/SofiaSans-Italic.ttf');
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Sofia;
-  src: url('assets/Sofia_Sans/SofiaSans-Italic-VariableFont_wght.ttf');
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
   font-family: Zen;
   src: url('assets/Zen_Maru_Gothic/ZenMaruGothic-Light.ttf');
   font-weight: 300;
@@ -117,6 +96,16 @@ label {
 textarea {
   padding: 10px;
 }
+
+.close-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.viewer > div {
+  padding: 40px 10px 10px;
+}
 /* layout rules */
 .centered-flex {
   display: flex;
@@ -170,20 +159,47 @@ textarea {
   flex-direction: column;
   align-items: flex-start;
 }
+
+.shadow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.viewer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.main {
+  z-index: 0;
+}
+
+.shadow {
+  z-index: 1;
+}
+
+.viewer {
+  z-index: 2;
+}
 /* module rules */
 .scroll {
   overflow-y: scroll;
-}
-
-.view-pic::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--shadow);
-  opacity: 0.5;
-  z-index: 1;
 }
 /* state rules */
 .hidden {
@@ -282,4 +298,46 @@ a {
   color: var(--text-color);
 }
 
-@media (max-width: 899px) {}
+.shadow {
+  background-color: var(--shadow);
+  opacity: 0.5;
+}
+
+.viewer > div {
+  background-color: var(--back-color-light);
+}
+
+.close-icon {
+  cursor: pointer;
+}
+
+.text {
+  white-space: pre-line;
+}
+
+@media (max-width: 899px) {
+  .main {
+    width: 100vw;
+    width: 100dvw;
+    height: auto;
+  }
+
+  .position-3 {
+    padding: 0;
+  }
+
+  .position-3 img {
+    height: 100%;
+    width: auto;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .position-3 {
+    flex-direction: row;
+    height: 300px;
+  }
+}
