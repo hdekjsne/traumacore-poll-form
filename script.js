@@ -55,6 +55,7 @@ const translation = {
 
 const twButton = document.querySelector('.tw button');
 const main = document.querySelector('.main');
+const gallery = document.querySelector('.position-3');
 const shadow = document.querySelector('.shadow');
 const viewer = document.querySelector('.viewer');
 const closeIcon = document.querySelector('.close-icon');
@@ -82,5 +83,5 @@ function hideViewer() {
 }
 
 twButton.addEventListener('click', goToMain);
-main.addEventListener('click', showViewer);
+gallery.addEventListener('click', showViewer);
 closeIcon.addEventListener('click', hideViewer);
