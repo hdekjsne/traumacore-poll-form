@@ -315,7 +315,7 @@ a {
   white-space: pre-line;
 }
 
-@media (orientation: portrait) {
+@media mobile and (orientation: portrait) {
   body {
     width: 100vw;
     height: auto;
