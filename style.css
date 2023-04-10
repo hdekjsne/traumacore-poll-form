@@ -173,7 +173,7 @@ button {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .position-4 {
@@ -198,6 +198,8 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  margin-bottom: 10px;
 }
 
 label {
@@ -256,9 +258,9 @@ textarea {
 .viewer {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   z-index: 2;
 }
 
@@ -291,8 +293,8 @@ textarea {
 
 @media screen and (orientation: portrait) {
   body {
-    min-width: none;
-    min-height: auto;
+    min-width: auto;
+    min-height: 100vh;
     width: 100vw;
   }
 
@@ -307,10 +309,14 @@ textarea {
 
   .position-1 {
     width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .position-2 {
     width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .position-3 {
@@ -320,9 +326,15 @@ textarea {
     flex-wrap: nowrap;
   }
 
+  .img-a {
+    max-width: 500px;
+  }
+
   .position-3 div {
-    width: auto;
+    width: min-content;
     height: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .position-3 img {
@@ -334,5 +346,11 @@ textarea {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    padding-right: 20px;
+    padding-bottom: 40px;
+  }
+
+  .hidden {
+    display: none;
   }
 }
