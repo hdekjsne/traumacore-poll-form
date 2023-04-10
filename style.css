@@ -294,8 +294,8 @@ textarea {
 @media screen and (orientation: portrait) {
   body {
     min-width: auto;
-    min-height: 100vh;
-    width: 100vw;
+    min-height: 100dvh;
+    width: 100dvw;
   }
 
   .main {
@@ -308,6 +308,7 @@ textarea {
   }
 
   .position-1 {
+    margin-top: 20px;
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
