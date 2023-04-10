@@ -170,6 +170,10 @@ button {
   grid-row: 1 / span 7;
 
   padding: 0 0 0 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .position-4 {
@@ -228,12 +232,6 @@ textarea {
 }
 
 /* position-3 */
-.position-3 section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .position-3 div {
   width: 100%;
 }
@@ -299,7 +297,7 @@ textarea {
   }
 
   .main {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -307,14 +305,17 @@ textarea {
     justify-content: center;
   }
 
+  .position-1 {
+    width: 100%;
+  }
+
+  .position-2 {
+    width: 100%;
+  }
+
   .position-3 {
     width: 100vw;
     height: 300px;
-  }
-
-  .position-3 section {
-    width: 100%;
-    height: 100%;
     flex-direction: row;
     flex-wrap: nowrap;
   }
@@ -327,5 +328,11 @@ textarea {
   .position-3 img {
     width: auto;
     height: 100%;
-  }  
+  }
+
+  .position-4 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
