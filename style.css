@@ -323,25 +323,7 @@ textarea {
 
   .position-3 {
     width: 100vw;
-    height: 300px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-
-  .img-a {
-    max-width: 500px;
-  }
-
-  .position-3 div {
-    width: min-content;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  .position-3 img {
-    width: auto;
-    height: 100%;
+    height: 50vh;
   }
 
   .position-4 {
