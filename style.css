@@ -97,7 +97,8 @@ body {
 
   background-image: radial-gradient(
     circle at top left,
-    var(--back-color-light) 0 70%,
+    white 0 10%,
+    var(--back-color-light) 40% 70%,
     var(--back-color-dark) 100% 110%
   );
   font-family: Zen;
@@ -246,10 +247,10 @@ textarea {
 .shadow {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
   z-index: 1;
+  width: 100%;
+  height: 100%;
 
   background-color: var(--shadow);
   opacity: 0.5;
@@ -294,7 +295,7 @@ textarea {
 @media screen and (orientation: portrait) {
   body {
     min-width: auto;
-    min-height: 100dvh;
+    height: auto;
     width: 100dvw;
   }
 
