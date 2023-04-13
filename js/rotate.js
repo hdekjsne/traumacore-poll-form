@@ -6,6 +6,9 @@ function changeVW() {
   if (width < newWidth) {
     vp.setAttribute('content', 'width=900px');
   }
+  if (width === newWidth) {
+    vp.setAttribute('content', 'width=device-width');
+  }
 }
 
 window.addEventListener('resize', changeVW);
