@@ -6,7 +6,7 @@ function changeVW() {
   if (width < newWidth) {
     vp.setAttribute('content', 'width=900px');
   }
-  if (width === newWidth) {
+  if (width > newWidth) {
     vp.setAttribute('content', 'width=device-width');
   }
 }
