@@ -24,7 +24,7 @@
     <!-- a tip -->
     <section class="position-1 border-box">
       <p>Во всех секциях есть прокрутка.</p>
-      <p>По клику можно посмотреть перевод.</p>
+      <p>По клику по изображению можно посмотреть его перевод.</p>
     </section>
     <!-- gallery -->
     <section class="partial-border position-3 scroll border-box reset">
@@ -382,10 +382,18 @@
         <p class="reset">Какие образы и/или художественные приёмы помогли понять тему изображений?</p>
         <textarea name="images" cols="15" rows="5"></textarea>
       </div>
+      <div class="width100ps">
+        <p class="reset">Если бы Вы не знали перевод текста изображений или изображения вообще не содержали текста, как бы Вы охарактеризовали их тематику?</p>
+        <textarea name="topicWithoutText" cols="15" rows="5"></textarea>
+      </div>
+      <div class="width100ps">
+        <p class="reset">Как Вы думаете, какую цель приследовали авторы изображений, когда публиковали их?</p>
+        <textarea name="aim" cols="15" rows="5"></textarea>
+      </div>
       <hr>
       <div class="width100ps">
         <p class="reset">Опишите общее впечатление.</p>
-        <textarea name="impressio" cols="15" rows="5"></textarea>
+        <textarea name="impression" cols="15" rows="5"></textarea>
       </div>
       <div class="width100ps">
         <p class="reset">Если отбросить контекст изображений, можете ли Вы сказать, что визуально они Вам нравятся?</p>
@@ -399,12 +407,40 @@
         </div>
       </div>
       <div class="width100ps">
+        <p class="reset">А учитывая контекст?</p>
+        <div class="checkbox-container">
+          <input type="radio" name="ifLikeWithContext" id="ifLikeWithContext1" class="hidden" value="1"><label
+            for="ifLikeWithoutContext1"> Да</label>
+          <input type="radio" name="ifLikeWithContext" id="ifLikeWithContext2" class="hidden" value="0"><label
+            for="ifLikeWithoutContext2"> Частично</label>
+          <input type="radio" name="ifLikeWithContext" id="ifLikeWithContext3" class="hidden" value="-1"><label
+            for="ifLikeWithoutContext3"> Нет</label>
+        </div>
+      </div>
+      <div class="width100ps">
         <p class="reset">Что привлекает Вас в данных изображениях или вызывает симпатию?</p>
         <textarea name="whatLike" cols="15" rows="5"></textarea>
       </div>
       <div class="width100ps">
         <p class="reset">Что вызывает неприязнь?</p>
         <textarea name="whatDislike" cols="15" rows="5"></textarea>
+      </div>
+      <div>
+        <p class="reset">Есть ли среди перечисленных чувств/эмоций/впечатлений то, что испытали Вы при просмотре? (можно выбрать несколько вариантов ответа)</p>
+        <div class="checkbox-container">
+          <input type="checkbox" name="feelings" id="feelings1" class="hidden" value="relief"><label for="feelings1"> Облегчение, принятие себя, чувство общности.</label>
+          <input type="checkbox" name="feelings" id="feelings2" class="hidden" value="disgust"><label for="feelings2"> Неприязнь, отвращение.</label>
+          <input type="checkbox" name="feelings" id="feelings3" class="hidden" value="fun"><label for="feelings3"> Смех, насмешка, ирония.</label>
+          <input type="checkbox" name="feelings" id="feelings4" class="hidden" value="empathy"><label for="feelings4"> Сочувствие, желание помочь и поддержать.</label>
+          <input type="checkbox" name="feelings" id="feelings5" class="hidden" value="pain"><label for="feelings5"> Боль, сожаление, горечь.</label>
+          <input type="checkbox" name="feelings" id="feelings6" class="hidden" value="pleasure"><label for="feelings6"> Удовольствие от визуального контакта, отсутствие напряжения, созерцательная отстранённость от содержания.</label>
+          <input type="checkbox" name="feelings" id="feelings7" class="hidden" value="anger"><label for="feelings7"> Чувство несправедливости, негодование, злость.</label>
+          <input type="checkbox" name="feelings" id="feelings8" class="hidden" value="impropriety"><label for="feelings8"> Ощущения неправильности, неприличия увиденного.</label>
+          <input type="checkbox" name="feelings" id="feelings9" class="hidden" value="anxiety"><label for="feelings9"> Тревога, чувство наличия угрозы.</label>
+          <input type="checkbox" name="feelings" id="feelings10" class="hidden" value="interest"><label for="feelings10"> Интерес.</label>
+          <input type="checkbox" name="feelings" id="feelings11" class="hidden" value="none"><label for="feelings11"> Отсутствие каких-либо эмоций.</label>
+          <input type="checkbox" name="feelings" id="feelings12" class="hidden" value="other"><label for="feelings12"> Другое.</label>
+        </div>
       </div>
     </section>
     <!-- submit button -->
