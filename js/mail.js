@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import nodemailer from 'nodemailer';
 import message from './form-parser.js';
 
