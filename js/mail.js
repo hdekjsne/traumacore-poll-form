@@ -1,4 +1,4 @@
-import nodemailer from 'nodemailer.js';
+import nodemailer from 'nodemailer';
 import message from './form-parser.js';
 
 const emailAdress = secrets.EMAIL_ADDRESS;
