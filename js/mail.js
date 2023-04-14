@@ -1,5 +1,8 @@
 import nodemailer from 'nodemailer';
-import message from './form-parser';
+import message from './form-parser.js';
+
+const emailAdress = secrets.EMAIL_ADDRESS;
+const password = secrets.PASSWORD;
 
 const transporter = nodemailer.createTransport("SMTP",
   {
@@ -7,11 +10,12 @@ const transporter = nodemailer.createTransport("SMTP",
     port: 465,
     secure: true,
     auth: {
-      user: process.env.EMAIL_ADDRESS,
-      pass: process.env.PASSWORD,
+      user: emailAdress,
+      pass: password,
     },
-    tls:{
-      secureProtocol: "TLSv1_method",
+    tls: {
+      rejectUnauthorized: true,
+      minVersion: "TLSv1.2"
     },
   }
 );

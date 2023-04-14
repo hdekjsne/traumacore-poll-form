@@ -1,5 +1,0 @@
-name: declair variables
-on: push
-env:
-  EMAIL_ADDRESS: secrets.EMAIL_ADDRESS
-  PASSWORD: secrets.PASSWORD
