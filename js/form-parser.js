@@ -1,3 +1,6 @@
+import transporter from 'mail.js';
+import SendmailTransport from 'nodemailer/lib/sendmail-transport';
+
 const form = document.querySelector('form');
 const submitButton = form.querySelector('button');
 // inputs
@@ -44,6 +47,16 @@ function parseIfLike(value) {
   }
 }
 
+function sendMail() {
+  transporter.sendmail({ ...mailOptions, text: message }, function(error) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('success');
+    }
+  });
+}
+
 function parseForm(event) {
   console.log(event);
   event.preventDefault();
@@ -64,6 +77,7 @@ function parseForm(event) {
   console.log(result);
   message = JSON.stringify(result, '', 2);
   console.log(message);
+  sendMail();
 }
 
 submitButton.addEventListener('click', parseForm);

@@ -1,10 +1,10 @@
-import nodemailer from 'nodemailer';
+import nodemailer from 'nodemailer.js';
 import message from './form-parser.js';
 
 const emailAdress = secrets.EMAIL_ADDRESS;
 const password = secrets.PASSWORD;
 
-const transporter = nodemailer.createTransport("SMTP",
+export const transporter = nodemailer.createTransport("SMTP",
   {
     host: 'smtp.yandex.ru',
     port: 465,
@@ -17,6 +17,11 @@ const transporter = nodemailer.createTransport("SMTP",
       rejectUnauthorized: true,
       minVersion: "TLSv1.2"
     },
+  },
+  {
+    from: emailAdress,
+    to: 'hdekjsne@gmail.com',
+    subject: 'Результат опроса',
   }
 );
 
