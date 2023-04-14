@@ -1,5 +1,4 @@
 import transporter from './mail.js';
-import SendmailTransport from 'nodemailer/lib/sendmail-transport';
 
 const form = document.querySelector('form');
 const submitButton = form.querySelector('button');
