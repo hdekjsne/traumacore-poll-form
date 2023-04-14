@@ -66,6 +66,6 @@ function parseForm(event) {
   console.log(message);
 }
 
-submitButton.addEventListener('submit', parseForm);
+submitButton.addEventListener('click', parseForm);
 
 export default message;
