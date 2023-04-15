@@ -1,4 +1,4 @@
-import { nodemailer } from '../node_modules/nodemailer/lib/nodemailer.js';
+import nodemailer from 'nodemailer';
 
 const emailAdress = secrets.EMAIL_ADDRESS;
 const password = secrets.PASSWORD;
