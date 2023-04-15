@@ -1,5 +1,4 @@
 import nodemailer from 'nodemailer';
-import message from './form-parser.js';
 
 const emailAdress = secrets.EMAIL_ADDRESS;
 const password = secrets.PASSWORD;
@@ -24,17 +23,3 @@ export const transporter = nodemailer.createTransport("SMTP",
     subject: 'Результат опроса',
   }
 );
-
-const mailOptions = {
-  from: 'mamaeva.anastasiya@hexly.ru',
-  to: 'hdekjsne@gmail.com',
-  subject: 'Результат опроса',
-};
-
-transporter.sendmail({ ...mailOptions, text: message }, function(error) {
-  if (error) {
-    console.log(error);
-  } else {
-    console.log('success');
-  }
-});
